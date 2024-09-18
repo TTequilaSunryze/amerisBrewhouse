@@ -308,16 +308,17 @@ h2{
 .contenedorImgSectionTres{
     display: block;
     margin: 50px 80px;
-    min-width: 600px;
-    min-height: 450px;
+    min-width: 400px;
+    max-width: 600px;
+    max-height: 450px;
     object-fit: cover;
     border-radius: 30px;
     
 } 
 
 .imgSectionTres{
-    width: 600px;
-    height: 450px;
+    width: 100%;
+    height: 100%;
     border-radius: 30px;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -340,7 +341,7 @@ h2{
 }
 
 .parrafoSectionTres{
-    width: 100%;
+    width:  auto;
     font-size: 23px;
     text-align: align-center;
     color: var(--color-negro);
@@ -395,9 +396,9 @@ h2{
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
    .contenedorImgSectionTres{
-    display: none;
+    display: none !important;
 }
     .contenedorParrafoSectionTres{
         display: flex;
@@ -408,9 +409,28 @@ h2{
         font-size: 1.5rem;
     }
     .contenedorParrafoSectionTres p{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }
+
+@media screen and (max-width: 1120px) {
+    .contenedorImgSectionTres{
+        display: flex;
+        width: 300px !important;
+        height: 300px !important;
+ }
+     .contenedorParrafoSectionTres{
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+     }
+     .contenedorParrafoSectionTres h4{
+         font-size: 1.5rem;
+     }
+     .contenedorParrafoSectionTres p{
+         font-size: 1rem;
+     }
+ }
 /*SECTION 4 SLIDER COMENTARIOS*/
 
 #sectionCuarta{
@@ -802,4 +822,121 @@ footer {
 .tarjetaMenu:hover{
     scale: (1.1, 1.1);
     transition-duration: 0.3s;
+}
+
+
+
+/*ABOUT US*/
+
+#tituloAbout{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-negro);
+    text-shadow: 0.1px 0px 0px var(--color-verde);
+}
+
+@media screen and (max-width: 800px) {
+        #tituloAbout{
+            font-size: 1.5rem;
+        }
+}
+
+/*CONTACTO*/
+
+#contenedorContacto{
+    margin: 50px 50px;
+
+}
+
+#tituloContacto{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-negro);
+    text-shadow: 0.1px 0px 0px var(--color-verde);
+}
+
+#parrafoContacto{
+    text-align: start;
+    text-wrap: wrap;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: var(--color-negro);
+    text-shadow: 0.1px 0px 0px var(--color-verde);
+}
+
+#infoContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+#infoContacto h4{
+    text-align: start;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: var(--color-negro);
+    text-shadow: 0.1px 0px 0px var(--color-verde);
+}
+
+#infoContacto p{
+    text-align: start;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: var(--color-negro);
+    text-shadow: 0.1px 0px 0px var(--color-verde);
+}
+
+infoContacto p span{
+    font-weight: bolder;
+}
+
+#horario{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 30px;
+    color: var(--color-negro);
+    text-shadow: 0.1px 0px 0px var(--color-verde);
+}
+
+#horarioLocal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    text-wrap: wrap;
+}
+
+#horarioLocal p {
+    text-align: start;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: var(--color-negro);
+    text-shadow: 0.1px 0px 0px var(--color-verde);
+}
+
+#tituloMapa{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px;
+    color: var(--color-negro);
+    text-shadow: 0.1px 0px 0px var(--color-verde);
+}
+
+#mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#backgroundContacto{
+    background-color: var(--color-segundoFondo);
+    border-radius: 30px;
+    margin: 20px;
+    padding: 40px;
 }
