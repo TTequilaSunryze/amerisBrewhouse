@@ -843,6 +843,35 @@ footer {
 }
 
 /*CONTACTO*/
+@media screen and (max-width: 800px) {
+    #tituloContacto{
+        font-size: 1.5rem !important;
+        margin-bottom: 10px;
+    }
+    #parrafoContacto{
+        font-size: 1rem !important;
+    }
+    #infoContacto h4{
+        font-size: 1.5rem !important;
+    }
+    #infoContacto p{
+        font-size: 1rem !important;
+    }
+
+    #horario{
+        font-size: 1.5rem !important;
+    }
+
+    #tituloMapa{
+        font-size: 1.5rem !important;
+    }
+
+    #mapa{
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
 
 #contenedorContacto{
     margin: 50px 50px;
